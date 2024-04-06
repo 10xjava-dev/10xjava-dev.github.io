@@ -1,8 +1,20 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: home
+title: Welcome to the 10X Java Developer book
 ---
 
-Welcome
+## Currently we're in *concept* phase. Looking for help with content, structure etc.
+
+### Read <a href="/background">here</a> for the background and *call-to-arms*
+
+### Editors
+
+| <figure><img src="/assets/images/pics/op.png" width="100" alt="Olimpiu Pop"><a href="https://www.linkedin.com/in/olimpiupop">Olimpiu Pop</a></figure> | <figure><img src="/assets/images/pics/sp.png" width="100" alt="Steve Poole"><a href="https://www.linkedin.com/in/noregressions/">Steve Poole</a></figure> |
+
+
+### Contributors
+
+Let us know if you'd like to contribute - we want to ensure fareness in contribution licencing and dealing with any (we hope) royalites
+
+**Your name here!**
+

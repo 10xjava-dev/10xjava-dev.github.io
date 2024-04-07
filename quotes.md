@@ -1,5 +1,10 @@
 ---
+title: Praise for the book
 ---
+
+
+
+
 
 ## Anonymous DeepFake Quotes from famous people about the book
 

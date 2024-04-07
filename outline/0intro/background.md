@@ -2,6 +2,7 @@
 title: Background
 layout: home
 permalink: /background
+parent: Building the Book 
 ---
 Steve Poole :
 

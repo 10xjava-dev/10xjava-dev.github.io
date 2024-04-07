@@ -30,7 +30,8 @@ twitter_username: jekyllrb
 github_username:  jekyll
 
 # Build settings
-remote_theme: sighingnow/jekyll-gitbook
+#remote_theme: sighingnow/jekyll-gitbook
+theme: just-the-docs
 plugins:
   - jekyll-feed
 

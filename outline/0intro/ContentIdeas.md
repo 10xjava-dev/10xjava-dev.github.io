@@ -2,6 +2,7 @@
 title: Content Ideas
 layout: home
 permalink: /content-ideas
+parent: Building the Book 
 ---
 
 **A big note - we are not looking to create the ultimate how-to bible here - in fact, we want to have sections where we cover personal opinions, advice and experiences - even if they are at times contradictory**   

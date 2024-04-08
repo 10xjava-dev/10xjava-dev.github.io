@@ -1,10 +1,8 @@
 ---
 layout: default
-title: Welcome
-nav_order: 0
+title: Welcome to the  behind-the-scenes part of the  10X Java Developer book
 ---
 
-## Welcome to the  behind-the-scenes part of the  10X Java Developer book
 ## Currently we're in *concept* phase. Looking for help with content, structure etc.
 
 ### Read <a href="/background">here</a> for the background and *call-to-arms*
@@ -19,6 +17,4 @@ nav_order: 0
 Let us know if you'd like to contribute
 
 We want to ensure fareness in contribution licencing and dealing with any (we hope) royalites
-
-**Your name here!**
 

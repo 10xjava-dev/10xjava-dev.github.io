@@ -31,12 +31,6 @@ github_username:  jekyll
 
 # Build settings
 #remote_theme: sighingnow/jekyll-gitbook
-theme: just-the-docs
+theme: minima
 plugins:
   - jekyll-feed
-
-toc:
-    enabled: true
-    h_min: 1
-    h_max: 3
-

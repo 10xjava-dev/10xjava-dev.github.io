@@ -33,3 +33,4 @@ gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 gem 'webrick', '~> 1.3', '>= 1.3.1'
 gem 'jekyll-remote-theme', '~> 0.4.3'
 gem 'just-the-docs', '~> 0.8.2'
+gem 'bundler', '~> 2.5.7'

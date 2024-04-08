@@ -309,11 +309,12 @@ PLATFORMS
   x86_64-linux-musl
 
 DEPENDENCIES
+  bundler (~> 2.5.7)
   github-pages
   http_parser.rb (~> 0.6.0)
   jekyll-feed (~> 0.12)
   jekyll-remote-theme (~> 0.4.3)
-  just-the-docs
+  just-the-docs (~> 0.8.2)
   minima (~> 2.5)
   tzinfo (>= 1, < 3)
   tzinfo-data

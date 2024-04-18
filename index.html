@@ -20,15 +20,28 @@ title: 10xJava.dev
     </article>
     <article>
     <h3 id='ideas'>Ideas, Tips, Warnings, Hard lessons, Insight - we want it all</h3>
-       <h4>Here's the latest suggestions </h4>
-        <ul>
-        {% for idea in site.data.ideas  | limit: 5 %}
-        <li>
-                <a href="{{idea.html_url}}">{{ idea.updated_at | date: "%-d %B"}} / {{ idea.title }} 
-                </a>
-            </li>
-        {% endfor %}
+       <h4>Here are some of  the latest suggestions </h4>
+        <ul id='idealist'>
         </ul>
+        
+        <script>const target= document.querySelector("#idealist");
+            const myRequest = new Request("https://api.github.com/repos/10xjava-dev/10xjava-dev.github.io/issues");
+            fetch(myRequest)
+            .then((response) => response.json())
+            .then((data) => {
+                var c=0;
+                for (const idea of data) {
+                    c++;
+                     if(c>5) break;
+                    const listItem = document.createElement("li");
+                    const anchor=document.createElement("a")
+                    anchor.href=listItem.html_url
+                    anchor.text=idea.title
+                    listItem.appendChild(anchor);
+                    target.appendChild(listItem);
+                }
+           })
+            .catch(console.error);</script>
         <h4>The rest are <a href="https://github.com/10xjava-dev/10xjava-dev.github.io/issues?q=is%3Aopen">here</a></h4>
     <p></p>
     </article>

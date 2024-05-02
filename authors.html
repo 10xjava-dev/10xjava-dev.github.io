@@ -1,0 +1,32 @@
+---
+permalink: /authors
+layout: default
+title: Authors
+---
+    
+    <main class="container">
+    <h1>Authors</h1>
+        <div class="grid">
+          {% for a in site.authors %}
+            <article>
+                <div class="grid">
+                <div>
+                <h3>{{ a.name }} </h3>
+                {% if a.twitter %}
+                    <a href="https://twitter.com/{{a.twitter}}"><h4>@{{a.twitter}}</h4></a>
+                {% endif %}
+                </div><div>
+            {% if a.photo %}
+                <img src="/assets/images/pics/{{a.photo}}" height="100" width="100">
+            {% endif %}
+                </div>
+            </div>
+            {{ a.content }}
+          </article>
+           {% else %}
+                No authors
+           {% endfor %}
+        </div>
+    </main>
+
+

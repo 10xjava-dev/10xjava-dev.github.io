@@ -1,0 +1,25 @@
+---
+permalink: /book
+layout: default
+title: Book
+---
+
+    
+    <main class="container">
+    <h1>Book Outline</h1>
+      
+    <table>
+        <thead>
+            <tr><th>Sequence</th><th>Author</th><th>Title</th></tr>
+        </thead>
+       <tbody>
+          {% for a in site.pages %}
+        <tr><td> {{ a.seq }} </td><td>{{ a.author }}</td><td><a href="{{a.url}}">{{ a.title }}</a></td></tr>
+           {% else %}
+            <tr><td>No pages</td></tr>
+           {% endfor %}
+        </tbody>
+    </table>
+    </main>
+
+

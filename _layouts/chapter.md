@@ -1,16 +1,15 @@
-{% include header.html %}
+{% include header.html %} 
 <body>
     {% include nav.html %} 
-    
+        Chapter
     <main class="container">
 
-    <h1>{{ name }}</h1>
-    {{ content }}
-       
+            {{ content }}
+
     </main>
-  
+
 {% include footer.html %}
-  
+
 </body>
 </html>
 

@@ -1,9 +1,12 @@
 {% include header.html %} 
 <body>
     {% include nav.html %} 
-        Chapter
+        {{ title }} 
     <main class="container">
-
+            <article>
+                <header>{{ intro }} </header>
+                <i>{{ takeaway }}</i>
+            </article>
             {{ content }}
 
     </main>

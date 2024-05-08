@@ -1,14 +1,22 @@
 {% include header.html %} 
 <body>
     {% include nav.html %} 
-        {{ title }} 
+{%if page.status %}
+<button>{{ page.status }} : last updated {{ page.date | date: "%b %d, %Y (%r %Z)" }}  </button>
+{% endif %}
     <main class="container">
-            <article>
-                <header>{{ intro }} </header>
-                <i>{{ takeaway }}</i>
-            </article>
-            {{ content }}
-
+<article>
+<blockquote>
+<h4>{{ page.title }}</h4>
+    {{ page.intro }}
+    <footer>
+    <small><i><cite> {{page.takeaway}}</cite></i></small>
+    </footer>
+</blockquote>
+</article>
+<article>
+{{ content }}
+</article>
     </main>
 
 {% include footer.html %}

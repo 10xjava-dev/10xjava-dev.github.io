@@ -7,7 +7,12 @@
     <main class="container">
 <article>
 <blockquote>
-<h4>{{ page.title }}</h4>
+
+<h4>
+{%if page.image %}
+<img src="{{ page.image }}">
+{% endif %}
+{{ page.title }}</h4>
     {{ page.intro }}
     <footer>
     <small><i><cite> {{page.takeaway}}</cite></i></small>

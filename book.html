@@ -10,11 +10,13 @@ title: Book
       
     <table>
         <thead>
-            <tr><th>Sequence</th><th>Author</th><th>Title</th></tr>
+            <tr><th>Sequence</th><th>Author</th><th>Title</th><th>Status</th><th>Word Count</th></tr>
         </thead>
        <tbody>
           {% for a in site.pages %}
-        <tr><td> {{ a.seq }} </td><td>{{ a.author }}</td><td><a href="{{a.url}}">{{ a.title }}</a></td></tr>
+
+
+        <tr><td> {{ a.seq }} </td><td>{{ a.author }}</td><td><a href="{{a.url}}">{{ a.title }}</a></td><td>{{a.status}}</td><td>{{a.content | number_of_words}}</td></tr>
            {% else %}
             <tr><td>No pages</td></tr>
            {% endfor %}

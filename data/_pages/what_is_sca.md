@@ -3,7 +3,7 @@ layout: chapter
 author: SP
 tags:
 title: Understanding Software Composition Analysis  
-seq: 3.0
+seq: 33.0
 status: Draft
 image: /assets/images/web/dalle-sca.png
 intro: SCA tools help developers manage and secure their applications by analyzing the components and libraries they integrate into their software. 

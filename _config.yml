@@ -31,6 +31,11 @@ github_username:  spoole167
 
 plugins:
   - jekyll-feed
+  - jekyll-last-modified-at
+
+# Optional. The default date format, used if none is specified in the tag.
+last-modified-at:
+  date-format: '%d-%b-%y'
 
 collections_dir: data
 
@@ -41,3 +46,8 @@ collections:
     output: true
     permalink: /:collection/:name
     sort_by: seq
+  topics:
+    output: true
+    permalink: /:collection/:name
+    sort_by: seq
+

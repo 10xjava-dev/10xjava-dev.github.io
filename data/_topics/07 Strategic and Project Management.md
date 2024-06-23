@@ -1,5 +1,14 @@
 ---
 title: Strategic and Project Management
+seq: 7
+icon: diagram-3-fill
+categories:
+  - Category: Thinking Strategically
+    Description: Aligning technical decisions with business objectives and planning
+      with a long-term perspective.
+  - Category: Project Management
+    Description: Taking ownership of the product lifecycle and managing risks
+      effectively.
 ---
 This category is tailored for devs who are keen on advancing their careers by understanding strategic and project management skills. Understanding how their technical work fits within the broader business context is crucial for making meaningful contributions to their organization. By aligning projects with company goals, being aware of market trends, and understanding how to efficiently managing resources, devs can enhance both their individual capabilities and the overall success of their team.
 

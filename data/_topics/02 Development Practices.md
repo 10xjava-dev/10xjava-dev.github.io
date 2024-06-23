@@ -1,5 +1,16 @@
 ---
 title: Development Practices
+seq: 2
+icon: code-slash
+categories:
+  - Category: Software Development Principles
+    Description: Clean code practices, code quality, and best practices.
+  - Category: Software Development Lifecycle and Methodologies
+    Description: Understanding Agile practices, Scrum, Kanban, version control
+      (Git), and DevOps.
+  - Category: Testing and Quality Assurance
+    Description: Unit testing, integration testing, test-driven development
+      (TDD), and behavior-driven development (BDD).
 ---
 Understanding and implementing effective development practices such as clean code principles, version control, and automated testing is crucial for creating high-quality, maintainable software. These practices help developers write code that is not only functional but also efficient and easy to understand.
 

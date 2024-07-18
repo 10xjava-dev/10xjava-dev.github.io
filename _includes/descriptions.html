@@ -1,0 +1,6 @@
+<h1>Descriptions</h1>
+{% for p in site.newsletters %}
+<br>
+D:{{ p.desc | markdownify }}
+<br>
+{% endfor %}

@@ -1,0 +1,2 @@
+{% assign past_newsletters = site.videos | where_exp: 'post', 'post.date <= site.time' | sort 'date' | reverse  -%}
+{% assign future_newsletters  = site.videos | where_exp: 'post', 'post.date >= site.time' | sort 'date' -%}

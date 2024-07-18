@@ -1,0 +1,9 @@
+{% for t in site.topics %}
+{%if t.tag==include.tag %}
+    <a href="/topics/{{include.tag}}">
+    <span class="icon">
+        <i class="{{ t.icon }}"></i>
+    </span>
+    </a>
+{% endif %}
+{% endfor %}

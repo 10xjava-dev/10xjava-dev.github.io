@@ -1,0 +1,112 @@
+---
+layout: default
+title: 10xJava.dev
+---
+<div class="card">
+    <img class="d-block mx-auto mb-4" src="/assets/images/web/landscape-desk.png" alt="" width="100%" >
+    <h1 class="display-5 fw-bold text-body-emphasis text-center">Welcome to 10xJava.dev</h1>
+
+    <div class="px-2 py-2 my-2 text-center">
+        <div class=" mx-auto">
+            <p class="lead mb-4">The hub for contributing to the '10x Java Developer' nesletter</p>
+            <div>
+                <p>We're using <a href="https://github.com/10xjava-dev/10xjava-dev.github.io">github</a>
+                    to collate all the ideas and suggestions from Java developers and enthusiasts who want to contribute their knowledge and insights towards creating a comprehensive guide for advanced Java development.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-1"></div>
+        <div class="col-2"><a class="btn btn-primary btn-lg" href="#" role="button">Contribute Ideas</a></div>
+        <div class="col-2"><a class="btn btn-success btn-lg" href="#" role="button">Contribute Content</a></div>
+        <div class="col-2"><a class="btn btn-info btn-lg" href="#" role="button">Join the newsletter</a></div>
+
+    </div>
+
+</div>
+
+<div class="card">
+    <div class="card-body">
+    <h2 class="display-6  text-body-emphasis text-left">About the Project</h2>
+        <p>'10x Java Developer' is a project aimed at harnessing the collective expertise of the Java community. Your insights can help shape the future of how we become better developers. How we improve our software engineering skills and our teams ability to work together, deliver faster and <i>have fun</i> </p>
+        <p>The detailed reasons behind the book are <a href="/motivations">here</a></p>
+        <p>
+            Since we're trying to crowd-source the wisdom of many people it's likely impractical to split any proceeds from this effort. Our commitment is to recognise every contributor and contribute any net royalties from the sale of this book to <a href="foojay.io">FooJay.io</a> (producing the book is unfortunatley not free)
+        </p>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-body">
+        <h2 class="display-6  text-body-emphasis text-left">Ideas, Tips, Warnings, Hard lessons, Insight - we want it all</h2>
+        <div class="row">
+            <div class="col">
+        <a href="/unlock"> <button>Help us unlock expert insights: What's your question today?</button></a>
+        <a href="/share"> <button>Share your wisdom, shape the future: Ready to answer?"</button></a>
+            </div>
+            <div class="col">
+       <h4>Here are some of  the latest suggestions </h4>
+        <ul id='idealist'>
+        </ul>
+        
+        <script>const target= document.querySelector("#idealist");
+            const myRequest = new Request("https://api.github.com/repos/10xjava-dev/10xjava-dev.github.io/issues");
+            fetch(myRequest)
+            .then((response) => response.json())
+            .then((data) => {
+                var c=0;
+                for (const idea of data) {
+                    c++;
+                     if(c>5) break;
+                    const listItem = document.createElement("li");
+                    const anchor=document.createElement("a")
+                    anchor.href=idea.html_url
+                    anchor.text=idea.title
+                    listItem.appendChild(anchor);
+                    target.appendChild(listItem);
+                }
+           })
+            .catch(console.error);</script>
+        <h4>The rest are <a href="https://github.com/10xjava-dev/10xjava-dev.github.io/issues?q=is%3Aopen">here</a></h4>
+    <p></p>
+            </div>
+        </div>
+    </div></div>
+
+
+
+<div class="card">
+    <div class="card-body">
+        <h3 id='editors'>Editors</h3>
+
+
+        <div class="grid">
+            <div>
+            <image src="/assets/images/pics/sp.png" width="200" height="200"></image><h4><a href="https://www.linkedin.com/in/noregressions">Steve Poole</a> <a href="https://twitter.com/spoole167">@spoole167</a></h4>
+            </div>
+        <div>
+            <image src="/assets/images/pics/op.png" width="200" height="200"></image><h4><a href="https://www.linkedin.com/in/olimpiupop/">Olympiu Pop</a> <a href="https://twitter.com/olimpiupop">@olimpiupop</a></h4>
+        </div>
+        </div></div>
+    <div class="card">
+        <div class="card-body">
+    <h3 id='contribute'>How to Contribute</h3>
+    <p>If you have a technique, tip, or any Java-related insight that you believe should be featured, we encourage you to submit your ideas and write-ups <a href="https://github.com/10xjava-dev/10xjava-dev.github.io/issues">here</a>
+        Or come visit us on the Foojay slack (see below) and talk to us.
+        </div></div>
+
+            <div class="card">
+                <div class="card-body">
+    <h3 id='contact'>Contacting us</h3>
+    <p>
+        <ul>
+        <li><a href="https://foojay.slack.com/archives/C06UUC5HN11">10xJavadev Slack channel at Foojay.io</a></li>
+        <li><a href="https://twitter.com/spoole167">@spoole167 at Twitter</a></li>
+        <li><a href="https://twitter.com/olimpiupop">@olimpiupop at Twitter</a></li>
+        </ul>
+    </p>
+</div></div>
+</div>

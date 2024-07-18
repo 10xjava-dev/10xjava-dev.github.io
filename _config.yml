@@ -18,8 +18,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
+title: 10xJava.dev
+email: spoole167@googlemail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
@@ -29,25 +29,31 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: spoole167
 github_username:  spoole167
 
+# Build settings
+#theme: minima
 plugins:
   - jekyll-feed
-  - jekyll-last-modified-at
 
-# Optional. The default date format, used if none is specified in the tag.
-last-modified-at:
-  date-format: '%d-%b-%y'
 
-collections_dir: data
-
+permalink: pretty
 collections:
-  authors:
-    output: true
-  pages:
-    output: true
-    permalink: /:collection/:name
-    sort_by: seq
-  topics:
-    output: true
-    permalink: /:collection/:name
-    sort_by: seq
+    videos:
+      output: true
+      sort_by: date
+      permalink: /:collection/:name
+    content:
+      output: true
+      sort_by: date
+      permalink: /:collection/:name
+    topics:
+      output: true
+      sort_by: name
+      permalink: /:collection/:name
+    types:
+      output: true
+      sort_by: name
+      permalink: /:collection/:name
+
+collections_dir: collections
+
 

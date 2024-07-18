@@ -1,0 +1,81 @@
+<section class="ftco-section" id="contributing">
+    <div class="container">
+        <div class="row justify-content-center py-5 mt-5">
+            <div class="col-md-12 heading-section text-center ftco-animate">
+                <h1 class="big big-2">Contributors</h1>
+                <h2 class="mb-4">Contributors</h2>
+                <p>Theres's so much we need your help with...</p>
+            </div>
+        </div>
+        
+        
+        <div class="row">
+            
+            {% for topic in site.topics %}
+            <div class="col-md-4 text-center d-flex ftco-animate">
+                <a href="{{topic.url}}" class="services-1">
+                    <span class="icon">
+                        <i class="{{ topic.icon }}"></i>
+                    </span>
+                    <div class="desc">
+                        <h3 class="mb-5">{{topic.short}}</h3>
+                    </div>
+                </a>
+            </div>
+            {% endfor %} 
+            
+            <div class="col-md-4 text-center d-flex ftco-animate">
+                <a href="#" class="services-1">
+                    <span class="icon">
+                        <i class="flaticon-analysis"></i>
+                    </span>
+                    <div class="desc">
+                        <h3 class="mb-5">DevOps / Dev Productivity</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 text-center d-flex ftco-animate">
+                <a href="#" class="services-1">
+                    <span class="icon">
+                        <i class="flaticon-flasks"></i>
+                    </span>
+                    <div class="desc">
+                        <h3 class="mb-5">Java & JVMs</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 text-center d-flex ftco-animate">
+                <a href="#" class="services-1">
+                    <span class="icon">
+                        <i class="flaticon-ideas"></i>
+                    </span>
+                    <div class="desc">
+                        <h3 class="mb-5">Security</h3>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-4 text-center d-flex ftco-animate">
+                <a href="#" class="services-1">
+                    <span class="icon">
+                        <i class="flaticon-analysis"></i>
+                    </span>
+                    <div class="desc">
+                        <h3 class="mb-5">AI</h3>
+                    </div>
+                </a>
+            </div>
+           
+            <div class="col-md-4 text-center d-flex ftco-animate">
+                <a href="#" class="services-1">
+                    <span class="icon">
+                        <i class="flaticon-ideas"></i>
+                    </span>
+                    <div class="desc">
+                        <h3 class="mb-5">Software Supply Chain</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

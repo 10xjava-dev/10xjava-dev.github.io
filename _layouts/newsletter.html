@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include head.html %}
+</head>
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+    
+    {% include nav.html %}
+    <div>
+    <section id="event">
+        <div class="container">
+            <div class="row justify-content-center pb-5">
+                    <div class="col-md-10 heading-section text-center ftco-animate resume-wrap">
+                        <br><br>
+                    <h1 class="big big-2">Events</h1>
+                        <span class="date">{{ page.date | date: "%-d %B %Y" }}
+                        </span>
+                        {% if page.city %}
+                        {% if page.country %}
+                        <h4 class="mb-4"> {{ page.city }} / {{ page.country }}</h4>
+                        {% else %}
+                        <h4 class="mb-4"> {{ page.city }} </h4>
+                        {% endif %}
+                        {% elsif page.country %}
+                        <h4 class="mb-4">{{ page.country }}</h4>
+                        {% else %}
+                        <h4 class="mb-4">somewhere ...</h4>
+                        {% endif %}
+                    <h2 class="mb-4"> {{ page.title }}</h2>
+                        <div class="row col-md-10 heading-section text-center ftco-animate">
+
+                            <div class="col-md-6">
+                                {{ page.content }}                    
+                            </div>
+                            
+                            {% if page.pics %}
+                            {% for i in (1..page.pics_count) %}
+                            <img src="/assets/images/photos/{{ page.pics }}/{{ i }}.jpeg" class="img-thumbnail rounded mx-auto d-block" alt="...">
+                            </img>
+                           
+                            {% endfor %}
+                            {% endif %}
+                        </div>
+                </div>
+            </div>
+                
+
+        </div>
+
+        
+    </section>
+    
+    </div>
+    {% include end_body.html %}
+    
+</body>
+</html>

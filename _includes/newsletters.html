@@ -1,0 +1,65 @@
+<section class="ftco-section" id="newsletters">
+    <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+            <div class="col-md-7 heading-section text-center ftco-animate">
+                <h1 class="big big-2">Newsletters</h1>
+                <h2 class="mb-4">Newsletters</h2>
+                <p>All the words about 10xJava.dev</p>
+                <p>We always have a few in development. Look for the associated video below</p>
+            </div>
+        </div>
+        {% include news_list.html %}
+        <div class="row">
+            <div class="col-md-12">
+            <h3>Latest</h3>
+            {% for event in past_newsletters limit: 1 %}
+            {% include news_box-light.html date=event.date ref=event.country title=event.title url=event.url tags=event.tags %}
+            {% endfor %}
+            </div>
+        </div>
+        
+        <div class="row d-flex">
+
+           
+            {% for post in site.posts limit:3 %}
+
+            <div class="col-md-4 d-flex ftco-animate">
+                <div class="blog-entry justify-content-end">
+
+
+                    {% if post.pics %}
+                        {% assign pics = post.pics %}
+                        {% assign picid = 1 %}
+                    {% else %}
+                    {% assign min = 1 %}
+                    {% assign max = 4 %}
+                    {% assign diff = max | minus: min %}
+                    {% assign picid = "now" | date: "%N" | modulo: diff | plus: min %}
+                    {% assign pics = "generic" %}
+                    {% endif %}
+
+                    <a href="{{ post.url }}" class="block-20" style="background-image: url('/assets/images/photos/{{ pics }}/{{ picid }}.jpg');">
+                     
+                    </a>
+
+
+                    <div class="text mt-3 float-right d-block">
+                        <div class="d-flex align-items-center mb-3 meta">
+                            <p class="mb-0">
+                                <span class="mr-2">{{ post.date }}</span>
+                                <a href="#" class="mr-2">Admin</a>
+                                <a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
+                            </p>
+                        </div>
+                        <h3 class="heading"><a href="single.html">{{ post.title }}</a></h3>
+                        <p>{{ post.excerpt }} </p>
+                    </div>
+                </div>
+            </div>
+
+            {% endfor %}
+
+
+        </div>
+    </div>
+</section>

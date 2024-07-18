@@ -1,0 +1,86 @@
+---
+permalink: /book
+title: Book
+---
+
+<!DOCTYPE html>
+<html lang="en">
+    {% include head.html %}
+<body id="page-top">
+    <!--banner-->
+    <div class="banner bg-black small text-center text-white-50">
+        <div class="container px-4 px-lg-5">
+
+            <div class="d-flex justify-content-center">
+                <div class="text-center">
+                    <h1 class="mx-auto my-0 text-uppercase">Book status</h1>
+                </div>
+            </div>
+            </div>
+
+    </div>
+
+    <section class="projects-section bg-light" id="help">
+        <div class="container px-4 px-lg-5">
+            <!-- Featured Project Row-->
+            <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+                <div class="col-xl-4 col-lg-5"><img class="img-fluid mb-3 mb-lg-0" src="/assets/images/web/bg-masthead.jpg" alt="..." /></div>
+                <div class="col-xl-8 col-lg-7">
+                    <div class="featured-text text-center text-lg-left">
+                        <h4>Contributions Wanted</h4>
+                        <p class="text-black-50 mb-0">We've all had help with our career and our code. Now it's your turn to help those in need of your wisdom and advice</p>
+                        <p class="text-black-50 mb-0">Whether it's that's one piece of advice you never forgot, an concise explaination of how to get the best from maven or an indepth guide to what every CV should have.. </p>
+                        <br>
+                        <a href="#">We want it all</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row gx-0 mb-5 mb-lg-5 justify-content-center" id="code">
+                <div class="col-xl-4 col-lg-5"><img class="img-fluid" src="/assets/images/web/code.jpg" alt="..." /></div>
+                <div class="col-xl-8 col-lg-7">
+                    <div class="bg-black text-center h-100 project">
+                        <div class="d-flex h-100">
+                            <div class="project-text w-100 my-auto text-center text-lg-left">
+                                <h4 class="text-white">Code</h4>
+                                <p class="mb-0 text-white-50">
+                                    10xJava Developers care about the code they write, the code they test and debug. They're productive developers but they work as a team.
+                                    Start here to see what we have (and what we need) for all matters code related -     <a href="https://startbootstrap.com/theme/grayscale/"><b>10xDev style</b></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Project Two Row-->
+            <div class="row gx-0 mb-5 mb-lg-5 justify-content-center" id="career">
+                <div class="col-xl-4 col-lg-5"><img class="img-fluid" src="/assets/images/web/career.jpg" alt="..." /></div>
+                <div class="col-xl-8 col-lg-7">
+                    <div class="bg-black text-center h-100 project">
+                        <div class="d-flex h-100">
+                            <div class="project-text w-100 my-auto text-center text-lg-right">
+                                <h4 class="text-white">Career</h4>
+                                <p class="mb-0 text-white-50">Code is code. It's just part of the job. There's so much more to being a 10xDev. Find out what else you need to have on your CV and in your heart.</p>
+                                <a href="#"><b>People First</b></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+          {% for a in site.pages %}
+
+
+        <tr><td> {{ a.seq }} </td><td>{{ a.author }}</td><td><a href="{{a.url}}">{{ a.title }}</a></td><td>{{a.status}}</td><td>{{a.content | number_of_words}}</td></tr>
+           {% else %}
+            <tr><td>No pages</td></tr>
+           {% endfor %}
+
+
+           {% include footer.html %}
+
+    </body>
+</html>

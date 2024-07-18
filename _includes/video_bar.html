@@ -1,0 +1,30 @@
+<section class="ftco-about img ftco-section ftco-no-pb" id="{{include.id}}">
+    <div class="container">
+        <div class="row d-flex">
+            <div class="col-md-6 col-lg-5 d-flex">
+                <div class="img-about img d-flex align-items-stretch">
+                    <div class="overlay"></div>
+                    <div class="img d-flex align-self-stretch align-items-center">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/VSUGNZwSIDM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+                <div class="row justify-content-start pb-3">
+                    <div class="col-md-12 heading-section ftco-animate">
+                        <h1 class="big">{{ include.title }}</h1>
+                        <h1 >{{ include.title }}</h1>
+                            <div class="row">
+                            <div class="col-md-12 heading-section ftco-animate">
+                                <h2 class="mb-4">{{include.subtitle}} </h2>
+                                 {{ include.content | markdownify }}
+                            </div>
+                       
+                            </div>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+</section>

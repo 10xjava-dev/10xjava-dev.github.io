@@ -7,9 +7,9 @@ status: Draft
 image: /assets/images/web/dalle-sca.png
 
 ---
-{% section intro %}
+<h4>section  intro %}
 SCA tools help developers manage and secure their applications by analyzing the components and libraries they integrate into their software.
-{% endsection %}
+ %}
 
 
 ## How SCA fits into your software supply chain ##
@@ -47,6 +47,6 @@ Unfortantelty picking a SCA tool is not a simple task. We've touched on some of 
 To help provide some clarity we'll look at the various elements and provide some 'buyers' advice.
 
 
-{% section takeaway %}
+<h4>section  takeaway %}
 This section provides an overview of SCA, discussing its importance, the different levels of analysis available, and the specific problems it helps identify and resolve. By understanding and implementing SCA correctly, developers can enhance their projects' security, compliance, and maintainability.
-{% endsection %}
+ %}

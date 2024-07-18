@@ -7,9 +7,9 @@ status: Draft
 image: /assets/images/web/dalle-sca.png
 newsletter: 00
 ---
-{% section intro %}
+<h4>section  intro %}
 SCA tools help developers manage and secure their applications by analyzing the components and libraries they integrate into their software.
-{% endsection %}
+ %}
 
 ## What is Software Composition Analysis?
 
@@ -36,6 +36,6 @@ Similar to the licence discovery process, it's feasible for the SCA tool to comp
 **Accuracy**
 False negatives and false positives are the bane of SCA. The ability to discover potential issues is easier than determining if the issue is actually relevent to the application. Often SCA tools will report false positives (where a problem was suspected but was proven by the consumer to be false) as a matter of design. This tends to mask the actually capabiltiies of the tool and creates immense frsutration within the development organisation as they deal with these red-herings. False postives are almost always bugs in the tool or an overselling of it's capabilities.  False negatives, where an real issue is not discovered, may be bugs in the tool or simply beyond its scope. Either way the application is still at risk.
 
-{% section takeaway %}
+<h4>section  takeaway %}
 This section provides an overview of SCA, discussing its importance, the different levels of analysis available, and the specific problems it helps identify and resolve. By understanding and implementing SCA correctly, developers can enhance their projects' security, compliance, and maintainability.
-{% endsection %}
+ %}

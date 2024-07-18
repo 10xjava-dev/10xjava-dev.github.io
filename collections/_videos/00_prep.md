@@ -7,11 +7,11 @@ layout: video
 tags: [cloud,devops,security,devrel]
 video: aaaa
 ---
-{% section intro %}
+intro
 
 We're well on our way to geting the first 10x newsletter out. 
 
-{% endsection %}
+
 
 ### Welcome to the pre-race meeting
 

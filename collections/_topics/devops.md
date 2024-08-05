@@ -1,10 +1,10 @@
 ---
 layout: topic
 icon: flaticon-flasks
-title: Developer Relations
+title: DevOps
 tag: devrel
-short: DevRel
-teaser: Ticks and Traps for Developer Relations
+short: DevOps
+teaser: The Dev in DevOps
 ---
 
 {% for t in site.data.contribution_types %}

@@ -1,8 +1,10 @@
 ---
-title: Advanced Java Performance Tuning
+title: Java Performance
 layout: topic
 icon: fa-solid fa-tachometer-alt
 tag: perf
+short: Performance
+teaser: Understanding and optimizing Java performance in all ways
 ---
 <h4>section  summary%}
 Understanding and optimizing Java performance is crucial for building high-performance applications. This topic covers JVM internals, profiling tools, garbage collection, and multithreading.

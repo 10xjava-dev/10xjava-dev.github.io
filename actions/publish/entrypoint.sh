@@ -4,5 +4,5 @@ echo "Hello World  $1"
 time=$(date)
 echo "time=$time" >> $GITHUB_OUTPUT
 
-ls /github/workspace/*
+git status 
 

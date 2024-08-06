@@ -1,0 +1,7 @@
+# action.yml
+name: 'Jekyll Publisher'
+description: 'Publishes Jekyll generated site'
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'

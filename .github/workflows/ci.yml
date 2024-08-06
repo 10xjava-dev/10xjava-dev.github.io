@@ -11,3 +11,5 @@ jobs:
 
       - name: Run Publisher
         uses: ./actions/publish
+        with:
+          mode: 'publish'

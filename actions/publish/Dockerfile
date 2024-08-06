@@ -2,7 +2,7 @@
 # Use a lightweight base image
 FROM ubuntu:20.04
 
-RUN mkdir /github/workspace
+RUN mkdir -p /github/workspace
 
 # Install dependencies (if any)
 RUN apt-get update && apt-get install -y \

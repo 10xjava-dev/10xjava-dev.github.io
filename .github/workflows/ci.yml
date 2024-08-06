@@ -10,4 +10,4 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Run Publisher
-        uses: ./actions/publish/action
+        uses: ./actions/publish

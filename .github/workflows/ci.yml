@@ -21,4 +21,4 @@ jobs:
         with:
           commit_message: Auto Publish
           branch: gh-pages
-          file_pattern: '_site'
+          file_pattern: '_site/**'

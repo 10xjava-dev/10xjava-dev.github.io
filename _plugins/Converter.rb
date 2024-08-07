@@ -11,10 +11,19 @@ module Jekyll
     def render(context)
  
       output = super
-      context.environments.first.page['desc'] = output
-      p context.environments.first.page.keys
-      p context.environments.first.page['desc']
-     output= markdownify(context,output)
+      output= markdownify(context,output)
+      section= context.environments.first.page['section']
+      if section.nil?
+        section={}
+        context.environments.first.page['section']=section
+      end
+      section[@type]=output
+      #context.environments.first.page['section'] = output
+
+      p "----"
+      p context.environments.first.page['section'].keys
+      p "----"
+
       return "<section class=\"section-#{@type}\">"+output+"</section>"
     end
     def markdownify(context,input)

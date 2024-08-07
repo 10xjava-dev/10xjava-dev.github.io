@@ -19,4 +19,3 @@ This particular newletter is here to gather our thoughts as prep for the first o
 
 #### Stats so far
 
-- Pages {{ site.content | size: }}

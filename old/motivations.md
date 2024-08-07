@@ -1,6 +1,6 @@
 ---
 title: Background
-layout: page
+layout: default
 permalink: /motivations
 ---
 

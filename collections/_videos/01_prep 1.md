@@ -18,5 +18,3 @@ We're well on our way to geting the first 10x newsletter out.
 This particular newletter is here to gather our thoughts as prep for the first official release.
 
 #### Stats so far
-
-- Pages {{ site.content | size: }}

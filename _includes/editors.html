@@ -1,39 +1,38 @@
 <section class="ftco-about img ftco-section ftco-no-pb" id="contact">
     <div class="container">
         <div class="row d-flex">
-            <div class="col-md-6 col-lg-5 d-flex">
+            <div class="col-md-3 col-lg-3 d-flex">
                 <div class="img-about img d-flex align-items-stretch">
                     <div class="overlay"></div>
-                    <div class="img d-flex align-self-stretch align-items-center" style="background-image:url(assets/images/me-casual-bw-t.png);">
+                    <div class="img d-flex align-self-stretch align-items-center" style="background-image:url(assets/images/photos/generic/1.jpg);">
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+            <div class="col-md-9 col-lg-9 pl-lg-5 pb-5">
                 <div class="row justify-content-start pb-3">
                     <div class="col-md-12 heading-section ftco-animate">
                         <h1 class="big">Meet the editors</h1>
                         <h1 >Meet the editors</h1>
-                            <div class="row">
-                            <div class="col-md-6 heading-section ftco-animate">
-                                <h2 class="mb-4">Steve Poole</h2>
-                                    <ul class="about-info mt-4 px-md-0 px-2">
-                                    <li class="d-flex"><span>Name:</span> <span><a href="https://www.linkedin.com/in/noregressions/">Steve Poole</a></span></li>
-                                    <li class="d-flex"><span>Company:</span> <span><a href="#">Independent</a></span></li>
-                                    <li class="d-flex"><span>Address:</span> <span><a href="https://maps.app.goo.gl/N2tzzjgmCCiehJxd6">London</a></span></li>
-                                    <li class="d-flex"><span>Linkedin:</span> <span><a href="https://www.linkedin.com/in/noregressions/">noregressions</a></span></li>
-                                    <li class="d-flex"><span>Twitter: </span> <span><a href="https://twitter.com/olimpiupop">@olimpiupop</a></span></li>
-                                </ul>
-                            </div>
-                        <div class="col-md-6 heading-section ftco-animate">
-                                <h2 class="mb-4">Olimpiu Pop</h2>
-                                     <ul class="about-info mt-4 px-md-0 px-2">
-                                        <li class="d-flex"><span>Name:</span> <span><a href="https://www.linkedin.com/in/noregressions/">Olimpiu Pop</a></span></li>
-                                        <li class="d-flex"><span>Company:</span> <span><a href="#">?</a></span></li>
-                                        <li class="d-flex"><span>Address:</span> <span><a href="https://maps.app.goo.gl/g9CPF6kaFJb8PWvj7">Cluj-Napoca</a></span></li>
-                                        <li class="d-flex"><span>Linkedin:</span> <span><a href="https://www.linkedin.com/in/olimpiupop/">olimpiupop</a></span></li>
-                                        <li class="d-flex"><span>Twitter: </span> <span><a href="https://twitter.com/spoole167">@spoole167</a></a></span></li>
+                            <div class="row d-flex">
+                                {% for editor in site.editors %}
+                                <div class="col-md-6 heading-section ftco-animate ">
+
+                                   <div class="blog-entry">
+                                       <img src="/assets/images/people/{{editor.image}}"></img>
+                                    <h4 class="mb-6"><a href="{{editor.url}}">{{ editor.name }}</a></h4>
+                                        <ul class="about-info mt-4 px-md-0 px-2">
+                                        <li class="d-flex"><span>Company:</span> <span><a href="#">{{editor.company}}</a></span></li>
+                                        <li class="d-flex"><span>Address:</span> <span><a href="{{editor.map}}">{{editor.location}}</a></span></li>
+                                        <li class="d-flex"><span>Linkedin:</span> <span><a href="{{editor.linkedin}}">link</a></span></li>
+                                        <li class="d-flex"><span>Twitter: </span> <span><a href="https://twitter.com/{{editor.twitter}}">@{{editor.twitter}}</a></span></li>
                                     </ul>
-                         </div>
+
+                                   </div>
+                                        </div>
+
+                                {% endfor %}
+
+
                             </div>
                     </div>
                 </div>

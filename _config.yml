@@ -45,6 +45,10 @@ collections:
       output: true
       sort_by: date
       permalink: /:collection/:name
+    editors:
+      output: true
+      sort_by: name
+      permalink: /:collection/:name
     topics:
       output: true
       sort_by: name

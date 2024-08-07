@@ -3,13 +3,22 @@ name: Publish
 on: [push]
 
 jobs:
-  my-job:
+  jekyll:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Run Publisher
         uses: ./actions/publish
         with:
           mode: 'publish'
+
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Auto Publish
+          branch: gh-pages
+          file_pattern: '_site'

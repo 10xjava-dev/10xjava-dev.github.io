@@ -2,6 +2,8 @@
 
 echo "Hello World  $1"
 
+pwd
+
 bundle install
 bundle exec jekyll build
 

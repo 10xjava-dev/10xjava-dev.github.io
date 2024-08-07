@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-54DKB56N');</script>
+    <!-- End Google Tag Manager -->
+    <title>Understanding Software Composition Analysis</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="/assets/css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/animate.css">
+
+    <link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/assets/css/magnific-popup.css">
+
+    <link rel="stylesheet" href="/assets/css/aos.css">
+
+    <link rel="stylesheet" href="/assets/css/ionicons.min.css">
+
+    <link rel="stylesheet" href="/assets/css/flaticon.css">
+    <link rel="stylesheet" href="/assets/css/icomoon.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+</head>
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+    <h1>Newsletter</h1>
+    <h4>section  intro %}
+SCA tools help developers manage and secure their applications by analyzing the components and libraries they integrate into their software.
+ %}
+
+
+## How SCA fits into your software supply chain ##
+
+### Concepts
+
+The concept of SCA is reasonably straightforward. Analyse the application (binaries/source or both) to discover the makeup of the component and then use that data to highlight vulnerabilities and other relevant information.
+
+The next question concerns what to do with the information. A moment's thought will reveal two elements to consider: When do you need to discover this information, and how do you react? Assuming that the SCA tools you use can be run at any stage during the Software Development Life Cycle (SDLC), then ideally, the first time will be as early as possible. Ideally during coding - maybe even in the IDE. It would be perfect if, during development, the developer could be informed that the selection of a new dependency would introduce issues.
+
+That brings us to the 'what' element. How do you deal with the discovery? What policy should be in place to guide the right thing to do? It might seem straightforward to prevent the introduction of a new, unacceptable component, and it often is. Unfortunately, that's likely the most concise, more straightforward case. What do you do when, during development, the SCA tool informs the developer that an existing dependency is now having an issue? Should you force an upgrade? What if the newer version of the dependency also has problems?
+
+
+### Practicalities
+
+As you can see, discovering an issue is hardly ever simple. Let's expand on that and explore a few aspects.
+
+Finding issues at development time is just one place in the SDLC where the SCA tools must be run. Often, we transform the code we're writing by various means, from simply compiling the code to packaging, adding in a container, and even deploying to the cloud. At each step in the process you must evaluate if the application has been transformed, added to, or removed from. A problematic dependency discovered at development time might have disappeared at packaging because the code concerned isn't included. Conversely, during packaging into, say, a zip, other code might be added. At which point you need SCA tools to evaluate the result.
+
+Every step of the SLDC has to be evaluated for the need to run an SCA. As you'll see there are good reasons not to go straight to the end deployment and just scan that.
+
+1. Detecting a problem as early as possible usually reduces cost.
+2. There are almost always issues in the dependencies, so the chance of a clean run is unlikely—humans will be involved in the final assessment.
+3. Issues can be found in any dependency, including the build tools, base images, etc. Therefore, SCA tools have to be used appropriately at every stage.
+Looking at SCA as a type of quality gate can help understand the need to run the analysis at various points during the SDLC. It can also help with understanding that the policy used to inhibit/resolve issues will be different depending on the SDLC stage: You'll want your developers to be able to use newer components to assess their value and keep up to date with the latest APIs. You might let that dependency through several stages but never let it get into production. However, suppose that dependency has a new licence. In that case, you might close the doors early and have a policy that makes it unavailable to developers.
+4. Data quality and tooling scope matters. Not every tool can scan every step and not every tool has the data needed to be able to report the facts accuratly.
+
+So though the aim is to run SCA tools at each step of the SDLC to provide the broadest coverage. As a SCA tools user it's likely that you'll need to provide mechanisms to manage the reaults of each step and to apply your organisational policies throughout.
+
+
+## Exploring the details ##
+
+
+Unfortantelty picking a SCA tool is not a simple task. We've touched on some of the theoretical capabiliteis that are in scope. The wide range of programming languages, packaging options, not to mention deliberate obsfication tools or the different choices of security or quality data sources - leaves one with a significant challenge when trying to determine which tools to use.
+To help provide some clarity we'll look at the various elements and provide some 'buyers' advice.
+
+
+<h4>section  takeaway %}
+This section provides an overview of SCA, discussing its importance, the different levels of analysis available, and the specific problems it helps identify and resolve. By understanding and implementing SCA correctly, developers can enhance their projects' security, compliance, and maintainability.
+ %}
+</h4></h4>
+
+
+    <footer class="ftco-footer ftco-section">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-md">
+                <div class="ftco-footer-widget mb-4">
+                    <h2 class="ftco-heading-2">About</h2>
+                    <p>This website made with code from Clarke. Thanks!</p>
+                    <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                        <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                        <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--
+            <div class="col-md">
+                <div class="ftco-footer-widget mb-4 ml-md-4">
+                    <h2 class="ftco-heading-2">Links</h2>
+                    <ul class="list-unstyled">
+                        <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>
+                        <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>About</a></li>
+                        <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Services</a></li>
+                        <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Projects</a></li>
+                        <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="ftco-footer-widget mb-4">
+                    <h2 class="ftco-heading-2">Services</h2>
+                    <ul class="list-unstyled">
+                        <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Web Design</a></li>
+                        <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Web Development</a></li>
+                        <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Business Strategy</a></li>
+                        <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Data Analysis</a></li>
+                        <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Graphic Design</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="ftco-footer-widget mb-4">
+                    <h2 class="ftco-heading-2">Have a Questions?</h2>
+                    <div class="block-23 mb-3">
+                        <ul>
+                            <li><span class="icon icon-map-marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
+                            <li><a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929 210</span></a></li>
+                            <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@yourdomain.com</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            -->
+        </div>
+       
+    </div>
+</footer>
+
+
+    
+
+<!-- loader -->
+<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/jquery-migrate-3.0.1.min.js"></script>
+<script src="/assets/js/popper.min.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+<script src="/assets/js/jquery.easing.1.3.js"></script>
+<script src="/assets/js/jquery.waypoints.min.js"></script>
+<script src="/assets/js/jquery.stellar.min.js"></script>
+<script src="/assets/js/owl.carousel.min.js"></script>
+<script src="/assets/js/jquery.magnific-popup.min.js"></script>
+<script src="/assets/js/aos.js"></script>
+<script src="/assets/js/jquery.animateNumber.min.js"></script>
+<script src="/assets/js/scrollax.min.js"></script>
+
+<script src="/assets/js/main.js"></script>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-54DKB56N"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+</body>
+</html>

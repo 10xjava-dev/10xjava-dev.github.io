@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-54DKB56N');</script>
+    <!-- End Google Tag Manager -->
+    <title>Understanding Software Composition Analysis</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="/assets/css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/animate.css">
+
+    <link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/assets/css/magnific-popup.css">
+
+    <link rel="stylesheet" href="/assets/css/aos.css">
+
+    <link rel="stylesheet" href="/assets/css/ionicons.min.css">
+
+    <link rel="stylesheet" href="/assets/css/flaticon.css">
+    <link rel="stylesheet" href="/assets/css/icomoon.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+</head>
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+    <h1>Newsletter</h1>
+    <h4>section  intro %}
+SCA tools help developers manage and secure their applications by analyzing the components and libraries they integrate into their software.
+ %}
+
+## What is Software Composition Analysis?
+
+Software Composition Analysis (SCA) is a toolset that helps software development teams manage the open-source and third-party components they use in their applications. At its core, SCA provides insights into the components' security vulnerabilities, licensing compliance, and overall health.
+SCA is normally a post production process. Software Artifacts are decomposed and analysed to determine the consituate parts. Given that SCA plays a significant role in discovering vulnerable compontents or even actively malicous code, SCA often takes place in an advisarial mode.
+
+## SCA Basics
+
+The intended use an SCA tool will dictate the expected or required capabilities. The ability to decompose and analyse software leads to various uses and necessary functionality.
+Any SCA tool should be able to perform two core elements of SCA. Two additional capabilities are strictly optional but provide increasing value.
+
+**Dependency Tracking**
+SCA tools should automatically detect all external libraries and dependencies a project uses and provide insight into each component's version information. This is an SCA tool's core capability: it can analyse the application code and detect the list of external elements required for the application to be built, deployed, and executed.
+
+**Security Vulnerability Identification**
+SCA tools must use the discovered dependency information to report on known security issues within each component. Given the dependency list above, it is reasonable to connect that list to public databases with reported vulnerabilities.
+
+**License Compliance**
+The process of scanning for dependencies and discovering their version information provides opportunities to report on the Software Licenses being used by those components. Additionally, the SCA tool may look at the application or dependency source code to determine whether declared licences exist. The ability to scan and identify the licenses of all used components is a crucial SCA capability for those who need to ensure legal compliance and avoid potential intellectual property issues.
+
+**Quality Assessment**
+Similar to the licence discovery process, it's feasible for the SCA tool to compare the discovered components against other data that covers software quality, API breakage, external compliance, etc.
+
+**Accuracy**
+False negatives and false positives are the bane of SCA. The ability to discover potential issues is easier than determining if the issue is actually relevent to the application. Often SCA tools will report false positives (where a problem was suspected but was proven by the consumer to be false) as a matter of design. This tends to mask the actually capabiltiies of the tool and creates immense frsutration within the development organisation as they deal with these red-herings. False postives are almost always bugs in the tool or an overselling of it's capabilities.  False negatives, where an real issue is not discovered, may be bugs in the tool or simply beyond its scope. Either way the application is still at risk.
+
+<h4>section  takeaway %}
+This section provides an overview of SCA, discussing its importance, the different levels of analysis available, and the specific problems it helps identify and resolve. By understanding and implementing SCA correctly, developers can enhance their projects' security, compliance, and maintainability.
+ %}
+</h4></h4>
+
+
+    <footer class="ftco-footer ftco-section">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-md">
+                <div class="ftco-footer-widget mb-4">
+                    <h2 class="ftco-heading-2">About</h2>
+                    <p>This website made with code from Clarke. Thanks!</p>
+                    <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                        <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                        <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--
+            <div class="col-md">
+                <div class="ftco-footer-widget mb-4 ml-md-4">
+                    <h2 class="ftco-heading-2">Links</h2>
+                    <ul class="list-unstyled">
+                        <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>
+                        <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>About</a></li>
+                        <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Services</a></li>
+                        <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Projects</a></li>
+                        <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="ftco-footer-widget mb-4">
+                    <h2 class="ftco-heading-2">Services</h2>
+                    <ul class="list-unstyled">
+                        <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Web Design</a></li>
+                        <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Web Development</a></li>
+                        <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Business Strategy</a></li>
+                        <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Data Analysis</a></li>
+                        <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Graphic Design</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="ftco-footer-widget mb-4">
+                    <h2 class="ftco-heading-2">Have a Questions?</h2>
+                    <div class="block-23 mb-3">
+                        <ul>
+                            <li><span class="icon icon-map-marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
+                            <li><a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929 210</span></a></li>
+                            <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@yourdomain.com</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            -->
+        </div>
+       
+    </div>
+</footer>
+
+
+    
+
+<!-- loader -->
+<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/jquery-migrate-3.0.1.min.js"></script>
+<script src="/assets/js/popper.min.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+<script src="/assets/js/jquery.easing.1.3.js"></script>
+<script src="/assets/js/jquery.waypoints.min.js"></script>
+<script src="/assets/js/jquery.stellar.min.js"></script>
+<script src="/assets/js/owl.carousel.min.js"></script>
+<script src="/assets/js/jquery.magnific-popup.min.js"></script>
+<script src="/assets/js/aos.js"></script>
+<script src="/assets/js/jquery.animateNumber.min.js"></script>
+<script src="/assets/js/scrollax.min.js"></script>
+
+<script src="/assets/js/main.js"></script>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-54DKB56N"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+</body>
+</html>

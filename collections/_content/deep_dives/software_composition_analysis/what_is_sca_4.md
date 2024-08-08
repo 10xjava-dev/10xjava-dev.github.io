@@ -1,9 +1,9 @@
 ---
 ---
 
-<h4>section  intro %}
+{% section  intro %}
 SCA tools help developers manage and secure their applications by analyzing the components and libraries they integrate into their software.
- %}
+{% endsection %}
 ### Summary ###
 
 Selecting an SCA tool is a complex endever - you're looking for value but above all - protection.
@@ -64,6 +64,6 @@ scan your code  ,scan code from repo, scan code on repo, san code in your devs c
 **5) Security research**
 
 
-<h4>section  takeaway %}
+{% section  takeaway %}
 This section provides an overview of SCA, discussing its importance, the different levels of analysis available, and the specific problems it helps identify and resolve. By understanding and implementing SCA correctly, developers can enhance their projects' security, compliance, and maintainability.
- %}
+{% endsection %}

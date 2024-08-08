@@ -1,9 +1,9 @@
 
-<h4>section  intro %}
+{% section  intro %}
 SCA tools help developers manage and secure their applications by analyzing the components and libraries they integrate into their software.
- %}
+{% endsection %}
 
-<h4>section  article %}
+{% section  article %}
 ## What is Software Composition Analysis?
 
 Software Composition Analysis (SCA) is a toolset that helps software development teams manage the open-source and third-party components they use in their applications. At its core, SCA provides insights into the components' security vulnerabilities, licensing compliance, and overall health.
@@ -29,8 +29,8 @@ Similar to the licence discovery process, it's feasible for the SCA tool to comp
 **Accuracy**
 False negatives and false positives are the bane of SCA. The ability to discover potential issues is easier than determining if the issue is actually relevent to the application. Often SCA tools will report false positives (where a problem was suspected but was proven by the consumer to be false) as a matter of design. This tends to mask the actually capabiltiies of the tool and creates immense frsutration within the development organisation as they deal with these red-herings. False postives are almost always bugs in the tool or an overselling of it's capabilities.  False negatives, where an real issue is not discovered, may be bugs in the tool or simply beyond its scope. Either way the application is still at risk.
 
- %}
-<h4>section  article %}
+ {% endsection %}
+{% section article %}
 
 ## How SCA fits into your software supply chain ##
 
@@ -67,8 +67,8 @@ Unfortantelty picking a SCA tool is not a simple task. We've touched on some of 
 To help provide some clarity we'll look at the various elements and provide some 'buyers' advice.
 
 
- %}
-<h4>section  article %}
+{% endsection %}
+{% section  article %}
 
 ## SCA Feature Set
 
@@ -138,7 +138,8 @@ To help provide some clarity we'll look at the various elements and provide some
 1. Configurable scan parameters and policies
 2. Support for custom rules and checks
 
----
+{% endsection %}
+{% section  summary %}
 
 ### Summary ###
 
@@ -198,7 +199,8 @@ scan your code  ,scan code from repo, scan code on repo, san code in your devs c
 **CWE**
 
 **5) Security research**
+{% endsection %}
 
-<h4>section  takeaway %}
+{% section  takeaway %}
 This section provides an overview of SCA, discussing its importance, the different levels of analysis available, and the specific problems it helps identify and resolve. By understanding and implementing SCA correctly, developers can enhance their projects' security, compliance, and maintainability.
- %}
+{% endsection %}

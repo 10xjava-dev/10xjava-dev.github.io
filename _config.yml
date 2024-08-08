@@ -45,7 +45,7 @@ collections:
       output: true
       sort_by: date
       permalink: /:collection/:name
-    editors:
+    people:
       output: true
       sort_by: name
       permalink: /:collection/:name

@@ -4,7 +4,12 @@ module Jekyll
     def initialize(tag_name, markup, tokens)
       super
       markup.strip!
-     @type=markup
+      words=markup.split(" ")
+      type=words.shift
+      header=words.join(" ");
+     @type=type
+     @title=header
+
     end
     
     
@@ -12,19 +17,27 @@ module Jekyll
  
       output = super
       output= markdownify(context,output)
-      section= context.environments.first.page['section']
-      if section.nil?
-        section={}
-        context.environments.first.page['section']=section
+      sections= context.environments.first.page['sections']
+      if sections.nil?
+        sections={}
+        context.environments.first.page['sections']=sections
       end
-      section[@type]=output
-      #context.environments.first.page['section'] = output
+      sections[@type]=output
 
-      p "----"
-      p context.environments.first.page['section'].keys
-      p "----"
+      #p "----"
+      #p context.environments.first.page['section'].keys
+      #p "----"
+      html="<section class='section-#{@type}'>"
+      html+="<a href='\##{@type}'>"
 
-      return "<section class=\"section-#{@type}\">"+output+"</section>"
+      if !@title.empty?
+        html+="<h3 class='section-#{@type}'>#{@title}</h3>"
+      end
+      html+="</a>"
+      html+=output
+      html+="</section>"
+
+      return html
     end
     def markdownify(context,input)
          context.registers[:site].find_converter_instance(

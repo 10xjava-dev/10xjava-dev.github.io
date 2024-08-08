@@ -5,7 +5,8 @@ map: https://maps.app.goo.gl/HwSttk1wjqRZW5696
 company: Independent
 twitter: KadiGrigg
 linkedin: https://www.linkedin.com/in/kadi-grigg
-image: kadi.png
-layout: editor
+image: people/kadi.png
+layout: people
+type: editor
 ---
 bio blurb..

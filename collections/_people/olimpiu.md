@@ -5,6 +5,7 @@ map: https://maps.app.goo.gl/g9CPF6kaFJb8PWvj7
 company: Independent
 twitter: olimpiupop
 linkedin: https://www.linkedin.com/in/olimpiupop
-image: olimpiu.png
-layout: editor
+image: people/olimpiu.png
+layout: people
+type: editor
 ---

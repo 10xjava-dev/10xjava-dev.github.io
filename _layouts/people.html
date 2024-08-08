@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include head.html %}
+</head>
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+    {% include nav.html  rel="/#" %}
+    
+    <section class="ftco-about img ftco-section ftco-no-pb">
+        <div class="container">
+            
+            {% capture data %}
+            <div class="row">
+                <div class="col-md-12 heading-section ftco-animate">
+                  {% include person_attributes.html person=page %}
+                </div>
+           
+                </div>
+            {% endcapture %}
+            
+            {% capture data2 %}
+            {% include cell_with_header.html name=page.name url=page.url content=data%}
+            {% endcapture %}
+            
+            {% include image_cell_row.html image=page.image content=data2 %}
+            
+            {% include 2cell_row.html
+               left=page.sections.bio
+               left_title="Bio"
+               left_url="#bio"
+               right_title="Summary"
+               right_url="#summary"
+               right=page.sections.summary %}
+           
+            
+        </div>
+    </section>
+    
+
+            
+
+    {% include footer.html %}
+
+
+    {% include end_body.html %}
+</body>
+</html>

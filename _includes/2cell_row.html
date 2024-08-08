@@ -1,0 +1,23 @@
+<div class="row d-flex">
+    {% if include.left_title %}
+        <h4 class="mb-6">
+	        <a href={{include.left_url}}>{{ include.left_title }}</a>
+	   </h4>
+       {% endif %}
+    <div class="col-md-6 col-lg-5 pl-lg-5 pb-5 d-flex">
+        
+    
+        {{ include.left }}
+    </div>
+    {% if include.right_title %}
+        <h4 class="mb-6">
+	        <a href={{include.right_url}}>{{ include.right_title }}</a>
+	   </h4>
+    <div class="col-md-6 col-lg-5 pl-lg-5 pb-5">
+       
+        {% endif %}
+       {{ include.right }}
+       
+       
+    </div>
+</div>

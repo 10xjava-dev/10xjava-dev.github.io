@@ -1,6 +1,6 @@
 ---
 title: Background
-layout: default
+layout: deep_dive
 permalink: /motivations
 ---
 

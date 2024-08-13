@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include head.html %}
+</head>
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+    {% include nav.html  rel="/" %}
+    
+    <section class="ftco-about img ftco-section ftco-no-pb">
+      
+        <div class="container">
+        {% if page.image %}
+            <h2>{{page.title}}</h2>
+            {% include image_cell_row.html content=content image=page.image%}
+            {% else %}
+            <h1>{{page.title}}</h1>
+    {{ content}}
+    {% endif %}
+    </div>
+    </section>
+    {% include end_body.html %}
+</body>
+</html>

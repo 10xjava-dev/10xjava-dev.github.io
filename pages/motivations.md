@@ -9,11 +9,9 @@ image: book1.png
 
 For some time (10yrs?) I’ve been trying to improve the default security posture of Java developers.
 
-Although I and a few others (notably <a href="https://www.linkedin.com/in/brianvermeer/">Brian Vermeer</a>) have been socialising the subject, providing education .. even trying to scare developers :-)
+Although I and a few others (notably <a href="https://www.linkedin.com/in/brianvermeer/">Brian Vermeer</a>) have been socialising the subject, providing education .. even trying to scare developers :-) I didn't feel that we’ve made an enormous difference.
 
-I didn't feel that we’ve made an enormous difference.
-
-Since my greybeard is heading towards white I’d like to try one more time to move the needle and find a way to help developers understand their responsibilities, the threats and the tools available.
+Since my greybeard is heading towards <span style="color:white;">white</span> I’d like to try one more time to move the needle and find a way to help developers understand their responsibilities, the threats and the tools available.
 
 To do that I’d like everyones help in creating a bandwagon that developers will want to jump on.  It's a bandwagon that will include the safety advice I need them to hear but made part of a bigger movement.
 

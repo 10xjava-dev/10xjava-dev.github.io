@@ -14,7 +14,7 @@
                 <div class="col-md-12">
                 <h3>Latest</h3>
                 {% for event in past_newsletters limit: 1 %}
-                {% include video_box-light.html date=event.date ref=event.country title=event.title url=event.url tags=event.tags %}
+                {% include video_box-light.html date=event.date video=event.video ref=event.country title=event.title url=event.url tags=event.tags %}
                 {% endfor %}
                 </div>
             </div>
@@ -25,7 +25,7 @@
                 {% for event in past_newsletters limit: 3 %}
                 {% if forloop.first %}
                 {% else %}
-                {% include box.md date=event.date ref=event.country title=event.title url=event.url   tags=event.tags %}
+                {% include box.md date=event.date video=event.video ref=event.country title=event.title url=event.url   tags=event.tags %}
                 {% endif %}
                 {% endfor %}
             </div>
@@ -33,7 +33,7 @@
             <div class="col-md-6">
                 <h3>Future</h3>
                 {% for event in future_newsletters limit: 3 %}
-                 {% include box.md date=event.date ref=event.country title=event.title url=event.url  %}
+                 {% include box.md date=event.date video=event.video ref=event.country title=event.title url=event.url  %}
                
                 {% endfor %}
             </div>

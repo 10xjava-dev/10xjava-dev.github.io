@@ -1,0 +1,43 @@
+
+
+
+
+<div class="resume-wrap ftco-animate">
+    <span class="date">{{ include.date | date: "%-d %B %Y" }}</span>
+        <div class="container">
+            
+            
+            <div class="row d-flex">
+            
+                <div class="col-md-6 col-lg-5 pl-lg-5 pb-5 d-flex">
+                   <div class="img-about img d-flex align-items-stretch">
+                        <div class="overlay"></div>
+                        <div class="img d-flex align-self-stretch align-items-center">
+                            <iframe width="300" height="300" src="{{ include.video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+              
+              
+                   
+                <div class="col-md-6 col-lg-5 pl-lg-5 pb-5">
+                    <h4 class="mb-6">
+            	        <a href={{include.right_url}}>{{ include.title }}</a>
+            	   </h4>
+                   
+                        
+                    {{ include.content }}
+                   
+                    {% if include.tags %}
+                    {% for t in include.tags %}
+                        <a href="/topics/{{t}}">#{{ t }}</a>
+                    {% endfor %}
+            {% endif %}
+                   
+                </div>
+            </div>
+            
+            
+           
+        </div> <!-- container -->
+</div>

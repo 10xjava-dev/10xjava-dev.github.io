@@ -41,6 +41,10 @@ collections:
       output: true
       sort_by: date
       permalink: /:collection/:name
+    podcasts:
+      output: true
+      sort_by: date
+      permalink: /:collection/:name
     content:
       output: true
       sort_by: date

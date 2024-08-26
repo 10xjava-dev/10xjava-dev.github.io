@@ -5,7 +5,7 @@ state: candidate
 date: 28/09/2024
 layout: video
 tags: [cloud,devops,security,devrel]
-video: aaaa
+video: https://www.youtube.com/watch?v=jwSBE1EIevA
 ---
 intro
 

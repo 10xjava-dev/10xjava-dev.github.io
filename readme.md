@@ -1,1 +1,1 @@
-# spoole167.github.io
+# 10X Java Dev Podcast and Newsletter

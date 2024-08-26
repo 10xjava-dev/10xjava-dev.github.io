@@ -1,0 +1,42 @@
+<section class="ftco-section ftco-no-pb" id="podcasts">
+    <div class="container">
+        <div class="row justify-content-center pb-5">
+            <div class="col-md-10 heading-section text-center ftco-animate">
+                <h1 class="big big-2">Podcasts</h1>
+                <h2 class="mb-4">Podcasts</h2>
+
+            </div>
+        </div>
+
+
+            {% include podcast_list.html %}
+            {% if has_podcasts %}
+            
+            <div class="row">
+                <div class="col-md-12">
+                
+                {% for event in past_podcasts limit: 1 %}
+                {% include video_box-dark.html content=event.content video=event.video date=event.date ref=event.country title=event.title url=event.url tags=event.tags %}
+                {% endfor %}
+                </div>
+            </div>
+            
+            <div class="row">
+            {% if has_past_podcasts %}
+            <div class="col-md-12">
+               
+                {% for event in past_podcasts limit: 3 %}
+                {% if forloop.first %}
+                {% else %}
+                {% include box.md date=event.date content=event.content video=event.video ref=event.country title=event.title url=event.url   tags=event.tags %}
+                {% endif %}
+                {% endfor %}
+            </div>
+            {% endif %}
+         
+
+        {% endif %}
+     
+    </div>
+
+</section>

@@ -1,0 +1,5 @@
+{% assign past_podcasts = site.podcasts | where_exp: 'post', 'post.date <= site.time' | sort 'date' | reverse  -%}
+{% assign future_podcasts  = site.podcasts | where_exp: 'post', 'post.date >= site.time' | sort 'date' -%}
+{% assign has_podcasts = site.podcasts.size > 10 %}
+{% assign has_past_podcasts = past_podcasts.size > 1 %}
+{% assign has_future_podcasts = future_podcasts.size > 1 %}
